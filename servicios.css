@@ -1,0 +1,216 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f3e7d1;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9b3426;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.user-options button {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Navigation */
+nav {
+    background-color: #d7b693;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    position: relative; /* Necesario para los submenús */
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Menú desplegable */
+nav ul li ul {
+    display: none; /* Los submenús están ocultos por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #d7b693;
+    padding: 10px 0;
+    min-width: 150px;
+    z-index: 1;
+}
+
+nav ul li:hover > ul {
+    display: block; /* Mostrar el submenú cuando se pasa el ratón */
+}
+
+nav ul li ul li {
+    padding: 5px 20px;
+}
+
+nav ul li ul li a {
+    color: #333;
+    font-weight: normal;
+}
+
+nav ul li a:hover,
+nav ul li ul li a:hover {
+    background-color: #9b3426;
+    color: white;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Features section */
+.features {
+    text-align: center;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 30px; 
+}
+
+.features h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Agendar section */
+.agendar {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.agendar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #9b3426;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #7c2b1b;
+}
+
+form input {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #9b3426;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+footer h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-subscribe input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.footer-logo img {
+    height: 80px;
+}

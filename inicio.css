@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f3e7d1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9b3426;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    margin: 0 20px;
+}
+
+.search-bar input { 
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.user-options button {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
+
+nav {
+    background-color: #d7b693;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+/* Estilos para el submenú */
+nav ul li ul {
+    display: none; /* Inicialmente ocultamos los submenús */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #d7b693;
+    min-width: 150px;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+nav ul li:hover > ul {
+    display: block; /* Mostrar submenú cuando el ratón pasa sobre el elemento principal */
+}
+
+nav ul li ul li {
+    padding: 5px 20px;
+}
+
+nav ul li ul li a {
+    color: #333;
+    font-weight: normal;
+}
+
+nav ul li a:hover,
+nav ul li ul li a:hover {
+    background-color: #9b3426;
+    color: white;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.features {
+    text-align: center;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 30px; 
+}
+
+.features h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.feature-item {
+    text-align: center; 
+    width: 30%; 
+    min-width: 250px; 
+    margin-bottom: 20px; 
+}
+
+.feature-item img {
+    height: 120px; 
+    width: auto;  
+    margin-bottom: 10px;
+}
+
+.brand-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.brand-logos img {
+    width: 80px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #9b3426;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+footer h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-subscribe input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.footer-logo img {
+    height: 80px;
+}

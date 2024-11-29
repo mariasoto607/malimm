@@ -1,0 +1,183 @@
+/* General reset */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e7d1;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #9b3426;
+    color: white;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .search-bar {
+    flex: 1;
+    display: flex;
+    margin: 0 20px;
+}
+
+header .search-bar input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header .search-bar button,
+header .user-options button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* Navigation */
+nav {
+    background-color: #d7b693;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Menú desplegable */
+nav ul li ul {
+    display: none; /* Los submenús están ocultos por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #d7b693;
+    padding: 10px 0;
+    min-width: 150px;
+    z-index: 1;
+}
+
+nav ul li:hover > ul {
+    display: block; /* Mostrar el submenú cuando se pasa el ratón */
+}
+
+nav ul li ul li {
+    padding: 5px 20px;
+}
+
+nav ul li ul li a {
+    color: #333;
+    font-weight: normal;
+}
+
+/* Efecto hover para los elementos */
+nav ul li a:hover,
+nav ul li ul li a:hover {
+    background-color: #9b3426;
+    color: white;
+}
+
+/* Products section */
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.product img {
+    width: 120px;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.product-price {
+    background-color: #B22222;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.product-description {
+    flex: 1;
+    text-align: left;
+}
+
+.product-description h3 {
+    font-size: 1.1em;
+    color: #9b3426;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #9b3426;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-subscribe input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-logo img {
+    height: 80px;
+}
